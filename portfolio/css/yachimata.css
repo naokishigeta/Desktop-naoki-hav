@@ -1,0 +1,41 @@
+body{
+  color:#332c22;
+}
+
+
+header .title{
+  width:100%;
+  font-size:30px;
+  margin:60px auto;
+}
+
+.container{
+  margin:0 100px 100px 100px;
+
+}
+
+.container h3{
+  margin:40px 0 20px 0;
+  font-size: 20px;
+}
+
+iframe{
+  margin-bottom:100px;
+}
+
+.anime{
+  text-align:center;
+  position:relative;
+  animation: fadeIn 4s ease;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+    top:0px;
+  }
+  100%{
+    opacity: 1;
+    top:0px;
+  }
+}

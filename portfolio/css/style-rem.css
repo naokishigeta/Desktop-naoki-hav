@@ -1,3 +1,5 @@
+/*headerここから*/
+
 header{
   display: flex;
   justify-content: space-between;
@@ -28,6 +30,12 @@ header{
   margin-right:1.25rem;
 
 }
+
+.menu-icon{
+  display:none;
+}
+
+/*welcomここから*/
 
 .welcome{
   background-image: url(../img/port.png);
@@ -138,16 +146,9 @@ header{
   transition:all 0.5s ease;
 }
 
-/*.container img:hover{
-  height:400px;
-  width:400px;
-  float:left;
-  cursor:pointer;
-  transition:all 0.5s ease;
-}*/
 
 
-.container .photo1:hover{
+/*.container .photo1:hover{
   height:25rem;
   width:25rem;
   float:left;
@@ -192,7 +193,7 @@ header{
   left:0px;
   border-radius: 25%;
 
-}
+}*/
 
 
 
@@ -286,7 +287,6 @@ header{
 .contact button:hover{
   background-color: #fff;
   color: #800000;
-   font-weight: bold;
   padding:15px 30px;
   transition-duration: 500ms;
 }
@@ -387,3 +387,260 @@ footer .footer-right{
     top:0px;
   }
 }
+
+
+/*ここからレスポンシブル対応にします*/
+
+
+/*タブレットに対応します*/
+
+@media screen and (max-width:960px){
+
+/*<!-- welcomeここから -->*/
+
+  .btn{
+  height:7.3vh;
+  width: 30vw;
+  margin-left:5vw;
+}
+  
+/*castここから*/
+
+.container{
+  flex-direction:column;
+}
+
+/*.container .photo1:hover{
+  height:25rem;
+  width:25rem;
+  float:left;
+  cursor:pointer;
+  transition:all 0.5s ease;
+  position: absolute;
+  left:0px;
+  border-radius: 25%;
+}
+
+.container .photo2:hover{
+  height:25rem;
+  width:25rem;
+  float:left;
+  cursor:pointer;
+  transition:all 0.5s ease;
+  position: absolute;
+  left:0px;
+  border-radius: 25%;
+
+}
+
+.container .photo3:hover{
+  height:25rem;
+  width:25rem;
+  float:left;
+  cursor:pointer;
+  transition:all 0.5s ease;
+  position: absolute;
+  left:0px;
+  border-radius: 25%;
+}
+
+.container .photo4:hover{
+  height:25rem;
+  width:25rem;
+  float:left;
+  cursor:pointer;
+  transition:all 0.5s ease;
+  position: absolute;
+  top:0px;
+  left:0px;
+  border-radius: 25%;
+
+}*/
+
+.right-contents{
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+.want p{
+  margin:5px 100px;
+}
+
+/*タブレット・コンタクトここから*/
+
+.contact{
+  height:600px;
+}
+
+.contact .form{
+  margin:30px 0 40px 0;
+  display:flex;
+  flex-direction: column;
+}
+
+
+.form .name,
+.form .email{
+  height:50px;
+  width:60%;
+  box-sizing:border-box;
+  font-size:16px;
+  margin-bottom:20px;
+}
+
+.form-left{
+  margin-right:0px;
+}
+
+.form .inquiry{
+  margin-top: 20px;
+  width:60%;
+}
+
+
+}
+
+
+/*スマホ対応ここから*/
+
+@media screen and (max-width:480px){
+  body{
+    min-width: 375px;
+
+  }
+
+/*ヘッダーここから*/
+
+.icon{
+  margin-left:2.5vw;
+  margin-top:3vh;
+}
+
+.header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    color:white;
+    margin:20px;
+    font-size:30px;
+  }
+
+/*welcomeここから*/
+
+.welcome{
+  background-image: url(../img/port_sp.png);
+}
+
+.title{
+  font-size: 3rem;
+  margin: 0 6vw;
+}
+
+.guideline {
+  font-size:1.3rem;
+  margin-left:6vw;
+  font-weight: normal;
+  text-shadow: 0.0625rem 0.125rem 0.1875rem #2b2b2b;
+}
+
+.btn-group{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn{
+  height:7.3vh;
+  width: 40vw;
+  margin-left:0vw;
+}
+
+.btn-group .yes{
+  margin-bottom: 30px
+}
+
+/*キャストここから**/
+
+.container .left-contents{
+  height:20rem;
+  width:20rem;
+}
+
+
+.container img{
+  height:10rem;
+  width:10rem;
+}
+
+
+
+.right-contents{
+  width:90%;
+  margin-top: 50px;
+}
+
+
+.want .sub-title{
+  padding:20px;
+}
+
+.want p{
+  margin:5px 30px;
+  padding:5px;
+  line-height: 1.5em;
+}
+
+/*ここからコンタクトよん*/
+
+.contact .sub-title{
+  padding-bottom: 10px
+}
+
+
+.form .name,
+.form .email{
+  width:80%;
+  margin-bottom:40px;
+}
+
+
+.form .inquiry{
+  margin-top: 30px;
+  width:80%;
+}
+
+/*ここからフッターだよ*/
+
+footer .hamburger{
+  display:none;
+}
+
+footer .footer-right{
+  margin:auto;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
