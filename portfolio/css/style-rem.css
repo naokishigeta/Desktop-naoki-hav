@@ -513,7 +513,7 @@ footer .footer-right{
 
 .icon{
   margin-left:2.5vw;
-  margin-top:3vh;
+  margin-top:0vh;
 }
 
 .header-right {
@@ -525,7 +525,27 @@ footer .footer-right{
     color:white;
     margin:20px;
     font-size:30px;
+    text-align: right;
   }
+
+  /*.menu-icon:hover{
+    display: block;
+    color:white;
+    margin:20px;
+    font-size:30px;
+    opacity: 0
+  }
+
+  .menu .voice{
+    opacity:0;
+  }
+
+.menu:hover .voice{
+    opacity:1;
+    margin-top: -40px;
+
+  }*/
+
 
 /*welcomeここから*/
 
@@ -536,6 +556,7 @@ footer .footer-right{
 .title{
   font-size: 3rem;
   margin: 0 6vw;
+  margin-top:100px;
 }
 
 .guideline {
@@ -550,6 +571,7 @@ footer .footer-right{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 
 }
 
