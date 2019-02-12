@@ -3,7 +3,7 @@
 header{
   display: flex;
   justify-content: space-between;
-  color:#fff;
+  color:black;
   font-size:1.5rem;
   width:100%;
   height:9.3vh;
@@ -23,12 +23,11 @@ header{
 .header-right{
   display:flex;
   align-items: center;
-  margin-right:5.5vw;
+  margin-right:1.5vw;
 }
 
-.header-right li:first-child{
+.header-right li{
   margin-right:1.25rem;
-
 }
 
 .menu-icon{
@@ -38,11 +37,11 @@ header{
 /*welcomここから*/
 
 .welcome{
-  background-image: url(../img/port.png);
+  background-image: url(../img/catan.png);
   background-size:cover;
   background-repeat: no-repeat;
   height: 110vh;
-  color:rgba(255, 250, 250);
+  color:black;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -53,17 +52,39 @@ header{
 }
 
 
-.title{
-  font-size: 4rem;
-  text-shadow: 0.0625rem 0.125rem 0.1875rem #2b2b2b;
 
+.title{
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 3rem;
+ /* text-shadow: 0.1rem 0.2rem 0.2rem #2b2b2b;*/
+  line-height:4rem; 
+  letter-spacing: 0.1rem;
+  font-weight:lighter;
+  /*-webkit-text-stroke: 0.005rem black;*/
+  /*color:transparent;*/
 }
 
+
+
 .guideline {
+  font-family: 'Roboto Mono', monospace !important;
   font-size:1.875rem;
   margin-top:6.6vh;
+  /*text-shadow: 0.0625rem 0.125rem 0.1875rem #2b2b2b;*/
+  letter-spacing: 0.05rem;
+  font-weight:lighter;
+  /*-webkit-text-stroke: 0.001rem black;*/
+}
+
+/* 点滅 */
+.blinking{
   font-weight: bold;
-  text-shadow: 0.0625rem 0.125rem 0.1875rem #2b2b2b;
+    animation:blink 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 .btn-group{
@@ -76,43 +97,33 @@ header{
   height:7.3vh;
   width: 11vw;
   margin-left:4vh;
-  color:white;
-  font-weight: bold;
+  color:black;
   font-size:1.75rem;
   border-radius: 0.625rem;
   cursor:pointer;
   transition:all 0.5s ease;
+  background-color:rgba(255, 250, 250, .1);
+  border:0.1875rem solid black;
+  /*text-shadow:0.0625rem 0.125rem 0.1875rem #2b2b2b;*/
+  font-weight:thin;
+  -webkit-text-stroke: 0.005rem black;
 }
 
 .btn:first-child{
   margin:0rem;
 }
 
-.yes{
-  background-color:rgba(255, 250, 250, .1);
-  border:0.1875rem solid white;
-  text-shadow:0.0625rem 0.125rem 0.1875rem #2b2b2b;
+
+.btn:hover{
+  background-color: rgba(255, 188, 255, .7);
 }
 
-.yes:hover{
-  background-color: rgb(255, 188, 255, .7);
-}
 
-.no{
-  background-color:rgba(255, 250, 250, .1);
-  border:0.1875rem solid white;
-  text-shadow: 0.0625rem 0.125rem 0.1875rem #2b2b2b;
-}
+/*aboutここから*/
 
-.no:hover{
-  background-color: rgb(168, 211, 255,.7);
-}
-
-/*castここから*/
-
-.cast{
+.about{
   padding:50px 0 80px 0;
-  background-color: #fffaf0;
+  background-color: #fff;
 }
 
 .sub-title{
@@ -196,6 +207,41 @@ header{
 }*/
 
 
+/*モーダル*/
+.modal-close{
+  text-align: right;
+  padding:10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-wrapper{
+  min-height: 400px;
+}
+
+.modal-content{
+  display: none;
+  position: relative;
+  top:50%;
+  left:50%;
+  width:500px;
+  height: 300px;
+  margin-left: -250px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+#modal-bg{
+  display: none;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
 
 .right-contents{
   width:600px;
@@ -204,7 +250,7 @@ header{
 }
 
 .right-contents h3{
-  color:#752100;
+  color:#333230;
   padding: 30px 0 10px 0;
   font-size: 18px;
 }
@@ -213,18 +259,25 @@ header{
   padding-top: 0px;
 }
 
-.want{
+.plan{
   background-color: #fffaf0;
   width:100%;
   padding-bottom:50px;
 }
 
-.want h2{
+/*planここから*/
+.plan{
+  background-image: url(../img/town.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.plan h2{
   margin:0 auto;
   padding:50px;
-  color:#24140e;
+  color:#333230;
 }
-.want p{
+.plan p{
   margin:5px 300px;
   padding:5px;
   line-height: 1.5em;
@@ -235,7 +288,7 @@ header{
 
 .contact{
   height:450px;
-  background-color:#24140e;
+  background-color:#333230;
   color:white;
   display: flex;
   flex-direction: column;
@@ -274,7 +327,7 @@ header{
 
 
 .contact button{
-  background-color: #24140e;
+  background-color: #333230;
   color:#fff;
   border-radius: 10px;
   border:3px solid #fff;
@@ -301,7 +354,7 @@ footer{
   font-size:20px;
   padding:5px;
   height: 70px;
-  background-color:#24140e;
+  background-color:#333230;
   border-top:3px dashed rgba(255, 250, 250);
 
 }
@@ -370,6 +423,17 @@ footer .footer-right{
   margin-right: 50px;
 }
 
+/*トップに戻るボタンだよ*/
+
+#scrollTop{
+  color:gray;
+  opacity: .5;
+  bottom: 3rem;
+  padding:4px;
+  position: fixed;
+  right:3rem;
+}
+
 
 .anime{
   text-align:center;
@@ -387,6 +451,7 @@ footer .footer-right{
     top:0px;
   }
 }
+
 
 
 /*ここからレスポンシブル対応にします*/
@@ -462,7 +527,7 @@ footer .footer-right{
   margin-left: 0px;
 }
 
-.want p{
+.plan p{
   margin:5px 100px;
 }
 
@@ -606,11 +671,11 @@ footer .footer-right{
 }
 
 
-.want .sub-title{
+.plan .sub-title{
   padding:20px;
 }
 
-.want p{
+.plan p{
   margin:5px 30px;
   padding:5px;
   line-height: 1.5em;

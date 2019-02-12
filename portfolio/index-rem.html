@@ -2,9 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Welcome NexSeed Okinawa</title>
+  <title>welcome to my portfolio</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style-rem.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <meta name="viewport"content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
@@ -15,13 +17,13 @@
     <!-- header左側 -->
     <div class="icon">
       <i class="fas fa-capsules"></i>
-      <span class="name">OdaKun</span>
+      <span class="name">NAOKI</span>
     </div>
     <!-- header右側 -->
     <ul class="header-right">
-      <li><i class="fab fa-facebook-square" fa-5x></i></li>
-      <li>ログイン</li>
-    </ul>
+      <li class="current"><a href="#about" class="smoothScroll">About</a></li>
+      <li class="current"><a href="#plan" class="smoothScroll">Plan</a></li>
+      <li class="current"><a href="#contact" class="smoothScroll">Contact</a></li>
    <!--  <div class="menu"> -->
         <a href="#" class="menu-icon"><span class="fa fa-bars"></span></a>
        <!--  <div class="voice">ハンバーーグ ‼︎</div> -->
@@ -31,24 +33,35 @@
 
 <!-- welcomeここから -->
 <main class="welcome">
-  <h1 class="title">Suddenly A Love Story</h1>
+  <h1 class="title">Hi,there!<br>
+  Welcome To My Portfolio.</h1>
+  
   <p class="guideline">
-  Are you 18 years or older?</p>
+  My name is Naoki Shigeta and I'm a fuckin' crazy traveller...
+  <span class="blinking">｜</span></p>
 
   <div class="btn-group">
-    <button class="btn yes">YES</button>
-    <button class="btn no">NO</button>
+    <button class="btn">about</button>
+    <button class="btn">plan</button>
+    <button class="btn">contact</button>
   </div>
 </main>
 
-<!-- cast ここから -->
+<!-- about ここから -->
 
-<main class="cast">
+<main class="about" id="about">
   <h2 class="sub-title">
-    MAIN CAST
+    ABOUT ME
   </h2>
 
   <div class="container">
+    <!-- モーダルでたやつ -->
+      <div class="modal-content">
+        <div class="modal-close js-modal-close">
+          <span>×</span>
+        </div>
+      </div>
+
       <ul class="left-contents">
         <li><img src="img/miyako.jpg" alt="Seedkun" class="photo1"></li>
         <li><img src="img/goto3.jpg" alt="Seedkun" class="photo2"></li>
@@ -60,7 +73,7 @@
       <h3 class="name">Name</h3>
       <p>重田 直樹 / Naoki Shigeta（age 34）</p>
       <h3 class="from">From</h3>
-      <p>千葉県八街市 <a href="yachimata.html">(・・・もっと詳しく)</a><br>
+      <p>千葉県八街市 <a href="ishigaki.html">(・・・もっと詳しく)</a><br>
       （千葉15年, 神奈川８年, 東京８年, 沖縄２年, 国外１年）</p>
       <h3 class="hobby">Hobby</h3>
       <p>絵画、旅、見たこともないものを見る・知ること</p>
@@ -73,7 +86,7 @@
   </div>
 </main>
 
-<main class="want">
+<main class="plan" id="plan">
   <h2 class="sub-title">What I want to do after Nexseed</h2>
   <p class="contents">
     某医療機関と某広告代理店で働いてきた経験から、１年半ほど薬剤師を対象としたwebサイトの運営をして参りました。いわゆるアフィカスです。ニートです。<br>
@@ -94,7 +107,7 @@
 <!-- ここからコンタクトです -->
 
 
-<aside class="contact">
+<aside class="contact" id="contact">
   <h2 class="sub-title">contact us</h2>
  
   <form action="">
@@ -151,6 +164,19 @@
 </footer>
 
 </div>
+
+<!-- topに戻るボタンだよ -->
+
+<i id="scrollTop" class="fas fa-chevron-circle-up fa-3x" href="#"></i>
+
+
+
+<!-- JSタグは階層に注意だよ -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
