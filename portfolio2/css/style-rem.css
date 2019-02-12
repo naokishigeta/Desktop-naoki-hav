@@ -204,8 +204,8 @@ position: relative;
   text-align:center;
   cursor: pointer;
   /* transform と transition によるチラつき防止 */
-  /*-webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
    /* アニメーションの時間 */
   transition-duration:2s;
 }
